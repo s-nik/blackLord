@@ -1,16 +1,16 @@
 (function(){
 	'use strict'
-		var b = prompt("Введите логин", "?");
-		if (b == "Админ") {
-			var p = prompt("Введите пароль", "?");
-			if (p == "Черный Властелин") {
+		var login = prompt("Введите логин", "?");
+		if (login == "Админ") {
+			var password = prompt("Введите пароль", "?");
+			if (password == "Черный Властелин") {
 				alert("Добро пожаловать!");
-			} else if (p == null) {
+			} else if (password == null) {
 				alert("Вход отменен");
 			} else {
 				alert("Пароль не верен");
 			}
-		} else if (b == null) {
+		} else if (login == null) {
 			alert("Вход отменен");
 		}
 		else { 
